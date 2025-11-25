@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModMenu.Attributes" Version="1.0.1" />
+    <PackageReference Include="StarMap.API" Version="0.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Brutal.ImGui">
+      <HintPath>..\..\..\..\..\..\Program Files\Kitten Space Agency\Brutal.ImGui.dll</HintPath>
+		<Private>false</Private>
+    </Reference>
+    <Reference Include="KSA">
+      <HintPath>..\..\..\..\..\..\Program Files\Kitten Space Agency\KSA.dll</HintPath>
+		<Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="mod.toml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
